@@ -4,9 +4,22 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config build-scripts/webpack.prod.js",
+    "start": "webpack-dev-server --config build-scripts/webpack.dev.js --open"
   },
   "dependencies": {
     "phaser": "^3.16.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^2.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "terser-webpack-plugin": "^1.2.3",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1",
+    "webpack-merge": "^4.2.1"
   }
 }
