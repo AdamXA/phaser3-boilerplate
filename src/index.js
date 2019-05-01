@@ -13,6 +13,17 @@ const config = {
 
 const game = new Phaser.Game(config);
 
-function preload() {}
+function onProgressUpdate() {
+  // update bar progress
+}
+
+function onLoadComplete() {
+  // move
+}
+
+function preload() {
+  this.load.on('progress', onProgressUpdate);
+  this.load.on('complete', onLoadComplete);
+}
 
 function create() {}
