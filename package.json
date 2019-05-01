@@ -2,7 +2,7 @@
   "name": "phaser3-boilerplate",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/bundle.min.js",
   "scripts": {
     "build": "webpack --config build-scripts/webpack.prod.js",
     "start": "webpack-dev-server --config build-scripts/webpack.dev.js --open"
